@@ -33,7 +33,7 @@ from sklearn import datasets
 
 # Loading the data from csv file to Pandas DataFrame
 data_names = ['fLength', 'fWidth', 'fSize', 'fConc', 'fConc1', 'fAsym', 'fM3Long','fM3Trans', 'fAlpha', 'fDist', 'class']
-telescope_data = pd.read_csv('/Users/tugbatunc/Documents/ITU2023-24 FALL TERM/FIZ437E Stat.Lear.from Data-App.inPhy./PROJECT/magic.data', sep=',', header=None, names=data_names)
+telescope_data = pd.read_csv('../magic.data', sep=',', header=None, names=data_names)
 
 # Printing the first 5 rows of the dataframe
 telescope_data.head()
@@ -196,7 +196,7 @@ from tensorflow.keras.regularizers import l2
 
 # Loading the data from csv file to Pandas DataFrame
 data_names_nn = ['fLength', 'fWidth', 'fSize', 'fConc', 'fConc1', 'fAsym', 'fM3Long','fM3Trans', 'fAlpha', 'fDist', 'class']
-telescope_data_nn = pd.read_csv('/Users/tugbatunc/Documents/ITU2023-24 FALL TERM/FIZ437E Stat.Lear.from Data-App.inPhy./PROJECT/magic.data', sep=',', header=None, names=data_names)
+telescope_data_nn = pd.read_csv('../magic.data', sep=',', header=None, names=data_names)
 
 class_mapping_nn = {"g": 1, "h": 0}
 telescope_data_nn['class'] = telescope_data_nn['class'].map(class_mapping_nn)

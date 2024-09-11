@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Load the dataset
-data = pd.read_csv("/Users/tugbatunc/Documents/ITU2023-24 FALL TERM/FIZ437E Stat.Lear.from Data-App.inPhy./pulsar_stars.csv")
+data = pd.read_csv("./pulsar_stars.csv")
 
 def euclidean_distance(x1, x2):
     distance = np.sqrt(np.sum((np.array(x1)-np.array(x2))**2))
